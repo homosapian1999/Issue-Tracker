@@ -1,0 +1,32 @@
+<style>
+  @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400&family=Roboto:wght@300;400;500&display=swap");
+</style>
+
+<div
+  class="w-50 border border-secondary border-1 p-3 m-auto"
+  style="background-color: #f8f0eb"
+>
+  <h3
+    class="display-5 p-3 mb-2 text-black"
+    style="
+      background-color: salmon;
+      font-weight: 200;
+      font-family: 'Roboto', sans-serif;
+    "
+  >
+    Project : <%= project.name %>
+  </h3>
+  <h4
+    class="display-6 p-3 mb-2 bg-light text-dark"
+    style="font-weight: 200; font-family: 'Roboto', sans-serif"
+  >
+    Author : <%= project.author %>
+  </h4>
+  <h5
+    class="display-6 p-3 mb-2 bg-success text-dark"
+    style="font-weight: 200; font-family: 'Roboto', sans-seri"
+  >
+    Description : <%= project.description %>
+  </h5>
+</div>
+<%-include('./partials/_issues'); %>
